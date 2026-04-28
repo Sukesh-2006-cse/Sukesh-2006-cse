@@ -27,15 +27,6 @@
 
 ---
 
-### 🐦 Connect with me
-
-<p align="center">
-  <a href="https://twitter.com/" target="_blank">
-    <img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" />
-  </a>
-</p>
-
----
 
 ### 🚀 Languages and Tools
 
