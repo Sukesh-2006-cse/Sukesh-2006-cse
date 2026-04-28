@@ -38,6 +38,12 @@
 
 ---
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sukesh-2006-cse/sukesh-2006-cse/output/github-contribution-grid-snake.svg" />
+</p>
+
+---
+
 ### 📊 GitHub Stats
 
 <p align="center">
