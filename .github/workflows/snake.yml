@@ -1,29 +1,30 @@
 name: Generate Snake Animation
 
 on:
-  schedule:
-    - cron: "0 0 * * *"   # runs daily
-  workflow_dispatch:
+schedule:
+- cron: "0 0 * * *"
+workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+build:
+runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+```
+steps:
+  - uses: actions/checkout@v3
 
-      - name: Generate snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: sukesh-2006-cse
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+  - name: Generate snake
+    uses: Platane/snk@v3
+    with:
+      github_user_name: sukesh-2006-cse
+      outputs: |
+        dist/github-contribution-grid-snake.svg?color_snake=#00bfff&color_dots=#0a192f,#0a192f,#0a192f,#0a192f,#0a192f
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  - name: Push to output branch
+    uses: crazy-max/ghaction-github-pages@v3
+    with:
+      target_branch: output
+      build_dir: dist
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
